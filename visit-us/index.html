@@ -363,6 +363,7 @@ display:none;
 </div><div class="vc_empty_space"   style="height: 26px"><span class="vc_empty_space_inner"></span></div>
 <div class="eltdf-contact-form-main">
 <form action="https://formspree.io/f/xreyyady" method="POST">
+	<input type="hidden" name="_next" value="https://cornucopialodge563.com/thank-you.html">
 	<div class="eltdf-row-full">
 		<p><label>Name</label><br />
 		<input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text" aria-required="true" placeholder="" value="" type="text" name="your-name" required />
@@ -381,38 +382,46 @@ display:none;
 	<div class="eltdf-row-full">
 		<p><label>Are You a Mason?</label><br />
 		<span class="wpcf7-form-control wpcf7-radio">
-			<span class="wpcf7-list-item"><input type="radio" name="mason" value="Yes" /> <span class="wpcf7-list-item-label">Yes</span></span>
-			<span class="wpcf7-list-item"><input type="radio" name="mason" value="No" /> <span class="wpcf7-list-item-label">No</span></span>
+			<span class="wpcf7-list-item"><input type="radio" name="mason" value="Yes" id="mason-yes" onclick="toggleMasonFields(true)" /> <span class="wpcf7-list-item-label">Yes</span></span>
+			<span class="wpcf7-list-item"><input type="radio" name="mason" value="No" id="mason-no" onclick="toggleMasonFields(false)" /> <span class="wpcf7-list-item-label">No</span></span>
 		</span>
 		</p>
 	</div>
-	<div class="eltdf-row-full">
-		<p><label>Mori ID</label><br />
-		<input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text" placeholder="" value="" type="text" name="your-id" />
-		</p>
-	</div>
-	<div class="eltdf-row-full">
-		<p><label>Mother Lodge</label><br />
-		<input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text" placeholder="" value="" type="text" name="mother-lodge" />
-		</p>
-	</div>
-	<div class="eltdf-row-full">
-		<p><label>Jurisdiction</label><br />
-		<input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text" placeholder="" value="" type="text" name="jurisdiction" />
-		</p>
-	</div>
-	<div class="eltdf-row-full">
-		<p><label>Degree</label><br />
-		<select class="wpcf7-form-control wpcf7-select" name="degree">
-			<option value="Entered Apprentice">Entered Apprentice</option>
-			<option value="Fellowcraft">Fellowcraft</option>
-			<option value="Mastermason">Mastermason</option>
-		</select>
-		</p>
+	<div id="mason-fields" style="display: none;">
+		<div class="eltdf-row-full">
+			<p><label>Mori ID</label><br />
+			<input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text" placeholder="" value="" type="text" name="your-id" />
+			</p>
+		</div>
+		<div class="eltdf-row-full">
+			<p><label>Mother Lodge</label><br />
+			<input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text" placeholder="" value="" type="text" name="mother-lodge" />
+			</p>
+		</div>
+		<div class="eltdf-row-full">
+			<p><label>Jurisdiction</label><br />
+			<input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text" placeholder="" value="" type="text" name="jurisdiction" />
+			</p>
+		</div>
+		<div class="eltdf-row-full">
+			<p><label>Degree</label><br />
+			<select class="wpcf7-form-control wpcf7-select" name="degree">
+				<option value="">Select Degree</option>
+				<option value="Entered Apprentice">Entered Apprentice</option>
+				<option value="Fellowcraft">Fellowcraft</option>
+				<option value="Mastermason">Mastermason</option>
+			</select>
+			</p>
+		</div>
 	</div>
 	<p><button class="wpcf7-form-control wpcf7-submit eltdf-btn-outline-slit eltdf-btn eltdf-btn-medium eltdf-btn-outline" type="submit"><span class="eltdf-btn-text">Submit</span></button>
 	</p>
 </form>
+<script>
+function toggleMasonFields(show) {
+    document.getElementById('mason-fields').style.display = show ? 'block' : 'none';
+}
+</script>
 </div>
 <div class="vc_empty_space"   style="height: 5px"><span class="vc_empty_space_inner"></span></div>		</div>
 	</div>
