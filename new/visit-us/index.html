@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Cornucopia Lodge #563</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(44, 36, 22, 0.7), rgba(44, 36, 22, 0.7)), url('../../wp-content/uploads/2025/02/masonic-bg-4.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 200px 0 100px;
+            text-align: center;
+        }
+        .page-header h1 {
+            font-family: var(--font-heading);
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 40px;
+        }
+        .contact-info h2 {
+            font-family: var(--font-heading);
+            font-size: 32px;
+            color: var(--color-primary);
+            margin-bottom: 25px;
+        }
+        .contact-info p {
+            font-size: 17px;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        .contact-form-wrapper {
+            background: var(--color-light);
+            padding: 40px;
+            border-radius: 8px;
+        }
+        .contact-form-wrapper h3 {
+            font-family: var(--font-heading);
+            font-size: 24px;
+            color: var(--color-primary);
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 25px;
+        }
+        .form-group label {
+            display: block;
+            font-family: var(--font-heading);
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--color-primary);
+            margin-bottom: 8px;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid rgba(201, 171, 129, 0.4);
+            border-radius: 4px;
+            font-family: var(--font-body);
+            font-size: 16px;
+            background: white;
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--color-secondary);
+        }
+        .radio-group {
+            display: flex;
+            gap: 20px;
+        }
+        .radio-group label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: var(--font-body);
+            font-size: 16px;
+            text-transform: none;
+            font-weight: 400;
+            cursor: pointer;
+        }
+        .radio-group input[type="radio"] {
+            width: auto;
+        }
+        #mason-fields {
+            display: none;
+            padding: 20px;
+            background: rgba(201, 171, 129, 0.1);
+            border-radius: 4px;
+            margin-top: 15px;
+        }
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="../index.html" class="logo">
+                <img src="../../wp-content/uploads/2019/09/logo-dark-1.png" alt="Cornucopia Lodge #563">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../our-history/index.html">Our History</a></li>
+                    <li><a href="../what-is-freemasonry/index.html">What is Freemasonry</a></li>
+                    <li><a href="../events/index.html">Events</a></li>
+                    <li><a href="index.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Contact Us</h1>
+        <p>Get in touch with Cornucopia Lodge #563</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2>Visit Our Lodge</h2>
+                <p>We welcome visitors and inquiries from all who are interested in Freemasonry. Whether you're a brother Mason visiting from out of town, or someone curious about the craft, we would be honored to hear from you.</p>
+                <p><strong>Meeting Location:</strong><br>
+                Cornucopia Lodge #563<br>
+                Flushing, Queens, NY</p>
+                <p><strong>Meeting Times:</strong><br>
+                Regular meetings are held monthly. Please contact us for specific dates and times.</p>
+            </div>
+            <div class="contact-form-wrapper">
+                <h3>Send Us a Message</h3>
+                <form action="https://formspree.io/f/xreyyady" method="POST">
+                    <input type="hidden" name="_next" value="https://cornucopialodge563.com/new/thank-you.html">
+                    <div class="form-group">
+                        <label for="your-name">Name</label>
+                        <input type="text" id="your-name" name="your-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="your-email">Email</label>
+                        <input type="email" id="your-email" name="your-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="your-cell">Cell Phone</label>
+                        <input type="tel" id="your-cell" name="your-cell" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Are You a Mason?</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="mason" value="Yes" onclick="toggleMasonFields(true)">
+                                Yes
+                            </label>
+                            <label>
+                                <input type="radio" name="mason" value="No" onclick="toggleMasonFields(false)">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                    <div id="mason-fields">
+                        <div class="form-group">
+                            <label for="your-id">Mori ID</label>
+                            <input type="text" id="your-id" name="your-id">
+                        </div>
+                        <div class="form-group">
+                            <label for="mother-lodge">Mother Lodge</label>
+                            <input type="text" id="mother-lodge" name="mother-lodge">
+                        </div>
+                        <div class="form-group">
+                            <label for="jurisdiction">Jurisdiction</label>
+                            <input type="text" id="jurisdiction" name="jurisdiction">
+                        </div>
+                        <div class="form-group">
+                            <label for="degree">Degree</label>
+                            <select id="degree" name="degree">
+                                <option value="">Select Degree</option>
+                                <option value="Entered Apprentice">Entered Apprentice</option>
+                                <option value="Fellowcraft">Fellowcraft</option>
+                                <option value="Mastermason">Mastermason</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="../../wp-content/uploads/2019/09/logo-light-1.png" alt="Cornucopia Lodge #563">
+                    <p>A fraternal organization dedicated to fellowship, charity, and community service since 1865.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../our-history/index.html">Our History</a></li>
+                        <li><a href="../what-is-freemasonry/index.html">What is Freemasonry</a></li>
+                        <li><a href="../events/index.html">Events</a></li>
+                        <li><a href="index.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>Cornucopia Lodge #563<br>Flushing, Queens, NY</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Cornucopia Lodge #563. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.main-nav').classList.toggle('active');
+        });
+
+        // Toggle Mason fields
+        function toggleMasonFields(show) {
+            document.getElementById('mason-fields').style.display = show ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

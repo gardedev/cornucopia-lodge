@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Cornucopia Lodge #563</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(44, 36, 22, 0.7), rgba(44, 36, 22, 0.7)), url('../../wp-content/uploads/2025/02/open-house-3.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 200px 0 100px;
+            text-align: center;
+        }
+        .page-header h1 {
+            font-family: var(--font-heading);
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        .events-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 40px;
+        }
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .event-card {
+            background: var(--color-white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        .event-image img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        .event-content {
+            padding: 30px;
+        }
+        .event-content h3 {
+            font-family: var(--font-heading);
+            font-size: 22px;
+            color: var(--color-primary);
+            margin-bottom: 10px;
+        }
+        .event-content p {
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+        .event-date {
+            font-family: var(--font-heading);
+            font-size: 13px;
+            color: var(--color-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 768px) {
+            .events-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="../index.html" class="logo">
+                <img src="../../wp-content/uploads/2019/09/logo-dark-1.png" alt="Cornucopia Lodge #563">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../our-history/index.html">Our History</a></li>
+                    <li><a href="../what-is-freemasonry/index.html">What is Freemasonry</a></li>
+                    <li><a href="index.html">Events</a></li>
+                    <li><a href="../visit-us/index.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Events</h1>
+        <p>Join us for fellowship and community service</p>
+    </section>
+
+    <!-- Events -->
+    <section class="events-container">
+        <div class="events-grid">
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="../../wp-content/uploads/2025/02/open-house-3.jpg" alt="Open House">
+                </div>
+                <div class="event-content">
+                    <div class="event-date">March 4th</div>
+                    <h3>Open House</h3>
+                    <p>Discover the Craft and learn about Freemasonry. Open to the public.</p>
+                    <a href="../visit-us/index.html" class="btn btn-sm">Learn More</a>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="../../wp-content/uploads/2025/02/coat-drive-2.jpg" alt="Coat Drive">
+                </div>
+                <div class="event-content">
+                    <div class="event-date">Annual Event</div>
+                    <h3>Annual Coat Drive</h3>
+                    <p>Keeping New York warm through community service. Donations accepted year-round.</p>
+                    <a href="../visit-us/index.html" class="btn btn-sm">Learn More</a>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="../../wp-content/uploads/2025/02/blood-drive-2.jpg" alt="Blood Drive">
+                </div>
+                <div class="event-content">
+                    <div class="event-date">Quarterly</div>
+                    <h3>Blood Drive</h3>
+                    <p>Life-saving community blood donation events in partnership with local hospitals.</p>
+                    <a href="../visit-us/index.html" class="btn btn-sm">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="../../wp-content/uploads/2019/09/logo-light-1.png" alt="Cornucopia Lodge #563">
+                    <p>A fraternal organization dedicated to fellowship, charity, and community service since 1865.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../our-history/index.html">Our History</a></li>
+                        <li><a href="../what-is-freemasonry/index.html">What is Freemasonry</a></li>
+                        <li><a href="index.html">Events</a></li>
+                        <li><a href="../visit-us/index.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>Cornucopia Lodge #563<br>Flushing, Queens, NY</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Cornucopia Lodge #563. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.main-nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
